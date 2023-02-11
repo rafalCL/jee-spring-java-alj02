@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 public class MessageSender {
     private MessageService service;
 
-    public MessageSender(@Qualifier("smsService") MessageService service) {
+    public MessageSender(@Qualifier("mySmsService") MessageService service) {
         this.service = service;
     }
 
